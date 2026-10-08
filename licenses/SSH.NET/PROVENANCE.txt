@@ -1,0 +1,2 @@
+SSH.NET 2026.0.0
+This notice combines the MIT license text with the copyright and license expression in the accompanying NuGet package metadata (ssh.net.nuspec). It is not an upstream LICENSE file copied from the source repository.

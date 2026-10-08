@@ -1,0 +1,15 @@
+.venv/
+.nuget-packages/
+.dotnet-home/
+.build-temp/
+artifacts/
+**/bin/
+**/obj/
+__pycache__/
+*.pyc
+config.json
+/data/
+/photos/
+*.db
+tmp/
+output/

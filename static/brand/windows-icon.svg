@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 40 176 176" width="256" height="256" role="img" aria-labelledby="title desc"><title id="title">镜头培养皿 — 透明放大版</title><desc id="desc">同心镜头与分段光圈围住菌落，让拍摄与分析融合成一个符号。</desc>
+<circle cx="128" cy="128" r="82" fill="#1C4051" stroke="#E0F4F0" stroke-width="9"/>
+<g fill="none" stroke="#6BDAC6" stroke-width="15" stroke-linecap="round">
+<path d="M106 64A68 68 0 0 1 171 77"/><path d="M182 91A68 68 0 0 1 190 154"/><path d="M178 176A68 68 0 0 1 117 195"/><path d="M94 187A68 68 0 0 1 61 135"/><path d="M63 111A68 68 0 0 1 85 78"/>
+</g><circle cx="128" cy="128" r="42" fill="#102B3F"/>
+<circle cx="115" cy="113" r="12" fill="#FFBE79"/><circle cx="146" cy="132" r="9" fill="#B0EDDC"/><circle cx="117" cy="150" r="7" fill="#6BDAC6"/>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "productId": "pi-camera-auto-capture",
+  "packageVersion": "1.0.0",
+  "installScript": "deploy/install_pi.sh",
+  "files": [],
+  "target": {
+    "operatingSystems": ["raspbian", "debian"],
+    "architectures": ["aarch64", "arm64"],
+    "minimumFreeSpaceMiB": 2048
+  },
+  "healthCheck": {
+    "path": "/health",
+    "defaultPort": 5000,
+    "timeoutSeconds": 45
+  },
+  "features": {
+    "kioskDefault": true,
+    "tailscaleDefault": false,
+    "tailscaleBundled": false,
+    "lanOnlyInstallSupported": true
+  }
+}

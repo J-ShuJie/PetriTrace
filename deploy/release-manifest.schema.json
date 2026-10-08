@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/pi-camera-control/release-manifest.schema.json",
+  "title": "Pi Camera Control release manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schemaVersion", "packageVersion", "installScript", "files"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "productId": { "const": "pi-camera-auto-capture" },
+    "packageVersion": {
+      "type": "string",
+      "pattern": "^[0-9A-Za-z][0-9A-Za-z._+-]*$"
+    },
+    "installScript": { "const": "deploy/install_pi.sh" },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "size"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "package": {
+      "type": "object",
+      "required": ["fileName", "sha256", "size", "format"],
+      "properties": {
+        "fileName": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "size": { "type": "integer", "minimum": 1 },
+        "format": { "const": "tar.gz" }
+      }
+    }
+  }
+}
